@@ -1,0 +1,23 @@
+cabal-version:      3.0
+name:               haskell-solutions
+version:            0.1.0.0
+synopsis:           AoC 2024 Haskell Solutions
+description:        Advent of Code 2024 Haskell Solutions
+homepage:           https://github.com/jawadcode/aoc-2024-solutions
+license:            MIT
+license-file:       LICENSE
+author:             Jawad W. Ahmed
+maintainer:         jawad.w.ahmed@gmail.com
+category:           Advent of Code
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+executable haskell-solutions
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.18.2.1
+    hs-source-dirs:   app
+    default-language: Haskell2010
